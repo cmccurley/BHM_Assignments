@@ -76,8 +76,35 @@ If the process is repeated and the sum of the two numbers is recorded, the proba
 
 
 \section*{Question 5}
+Knowing that a woman's brother shows the gene for hemophilia, and that the father does not show the gene, we can assume that the woman's mother has at least one hemophilia positive chromosome, or $X_P$.  This means, that the mother shows either $X_{p}X_{n}$ or $X_{p}X_{p}$.  This implies that the woman has a $\frac{3}{4}$ of having $X_{p}X_{n}$ and $\frac{1}{4}$ of showing $X_{n}X_{n}$.  So from this information alone, the probability that the woman has a hemophilia positive chromosome is $\boxed{\frac{3}{4}}$.  After being told that both of the woman's sons do not have hemophilia, and assuming that her husband does not exhibit hemophilia, we can update the probability that the woman carries the gene by Bayes' Theorem.
+
+\begin{align*}
+	P(W_{p}|S1_{n},S2_{n}) &= \frac{P(S1_{n},S2_{n}|W_{p})P(W_{p})}{P(S1_{n},S2_{n})} \\
+	&=  \frac{P(S1_{n},S2_{n}|W_{p})P(W_{p})}{P(S1_{n},S2_{n}|W_{p})P(W_{p})+ P(S1_{n},S2_{n}|W_{n})P(W_{n})} \\
+	&= \frac{[\frac{1}{2}\cdot\frac{1}{2}]\cdot \frac{3}{4}}{[\frac{1}{4}\cdot \frac{3}{4}] +[1 \cdot \frac{1}{4}]} \\
+	&=\frac{\frac{3}{16}}{\frac{7}{16}}\\
+	&= \boxed{\frac{3}{7}}
+\end{align*} 
+
+\noindent
+Provided the additional fact that the woman's third son does not exhibit hemophilia, we can update the probability:
+\begin{align*}
+P(W_{p}|S3_{n},S1_{n},S2_{n}) &= \frac{P(S3_{n},S1_{n},S2_{n}|W_{p})P(W_{p})}{P(S3_{n},S1_{n},S2_{n})} \\
+&= \frac{P(S3_{n},S1_{n},S2_{n}|W_{p})P(W_{p})}{P(S3_{n},S1_{n},S2_{n}|W_{p})P(W_{p})+ P(S3_{n},S1_{n},S2_{n}|W_{n})P(W_{n})} \\
+&=\frac{P(S3_{n}|W_{p})P(S1_{n},S2_{n}|W_{p})P(W_{p})}{P(S3_{n}|W_{p})P(S1_{n},S2_{n}|W_{p})P(W_{p})+ P(S3_{n}|W_{n})P(S1_{n},S2_{n}|W_{n})P(W_{n})} \\
+&= \frac{[\frac{1}{2}\cdot\frac{1}{4}]\cdot \frac{3}{4}}{[\frac{1}{2} \cdot\frac{1}{4}\cdot \frac{3}{4}] +[1 \cdot 1 \cdot \frac{1}{4}]} \\
+&=\frac{\frac{3}{32}}{\frac{3}{32} + \frac{8}{32}}\\
+&= \boxed{\frac{3}{11}}
+\end{align*} 
+
 
 \section*{Question 6}
+We are interested in determining the probability of having a disease, even though the test came back negative.  This can be written by Bayes theorem as 
+\begin{align*}
+	P(\text{disease}|\text{test}_{-}) = \frac{P(\text{test}_{- }|\text{disease})P(\text{disease})}{P(\text{test}_{-})}
+\end{align*}
+\noindent
+However, we do not know the accuracy of the test, nor how the accuracy was computed (\# of people tested, how many were/ were not diseased, how many diseased people's tests came back negative and vice versa.)  Based on the fact that symptoms are present and that taking the medicine would likely not be harmful in the absence of the disease, treating for Lyme is probably the correct decision.
 
 
 

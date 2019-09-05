@@ -1,0 +1,84 @@
+\documentclass{article}[12 pt]
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{appendix}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{shortvrb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{commath}
+\usepackage{bm}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\geometry{margin=1 in}
+
+\newcommand{\smallvskip}{\vspace{5 pt}}
+\newcommand{\medvskip}{\vspace{30 pt}}
+\newcommand{\bigvskip}{\vspace{100 pt}}
+\newcommand{\tR}{\mathtt{R}}
+
+
+
+
+\begin{document}
+	
+\begin{center}
+	\textbf{\Large Connor McCurley} \\
+	AGR 6932  \qquad \quad \quad \textbf{\large Homework 1} \quad \quad \qquad Fall 2019 
+\end{center}
+
+
+%===================================================
+%=================== Question 1 ====================
+%===================================================
+
+\section*{Question 1}
+Provide a definition for the following concepts, accompanied by a mathematical notation:
+\begin{itemize}
+	\item \textit{Probability} - The number of ways an event can occur over the number of things that can happen.  For event $E$, $p(E) = \frac{\text{\# ways E can occur}}{\text{\# of things that can happen}}$
+	\item \textit{Joint Probability} - The joint probability of two events, $A$ and $B$ is the probability that both events occur. $p(A,B)=p(A\cap B) = p(A|B)p(B)$.
+	\item \textit{Conditional Probability} - The conditional probability $p(A|B)$ is the probability that $A$ occurs, conditioned on the information that $B$ certainly occurs.  $p(A|B) = \frac{p(A,B)}{p(B)}=\frac{p(A \cap B)}{p(B)}$.
+	\item \textit{Marginal Probability} - A marginal probability is the probability of a single event in a set of events.  If we define a set of events $\{B_{n}: n=1,2,3,\dots\}$, which  cover the entire sample space $\sum_{n}=\Omega$ when taken together, then we are interested in the event $A$ that overlaps one or more of the $B_{n}$.  The probability of $A$ is $p(A)=\sum_{n}p(A|B_n)p(B_n)$ or  $p(A) = \int [A|B][B]dB$
+	\item The \textit{probability triple} - The probability space (probability triple) is a model of an experiment that consists of a sample space $\Omega$, which is the set of all possible outcomes, a sigma algebra $\mathcal{F}$, which is a collection of events, and a probability measure $P$ which is a function that maps events to probabilities. The probability triple can be written as $(\Omega, \mathcal{F}, P)$.
+\end{itemize}
+
+
+\section*{Question 2}
+If we flip a fair coin 100 times, the experimental setup can be defined by the sample space $\Omega = \{H,T\}$, the event space $\mathcal{F}$ which is every possible combination of outcomes for the 100 flips, or $2^N$, and the probability measure $P$ which is summarized by ``$N$ choose $K$".  This problem is described by the binomial distribution, or $[z|n,\phi] = {n \choose z}\phi^{z}(1-\phi)^{(n-z)} $.  So the probability of exactly 50 heads, or $z=50$, can be found by evaluating the pmf at $z=50$.  This is given by $\boxed{p(z=50|n=100,\phi=0.5) =  0.08}$.  It follows from the Law of Total Probability that the probability of observing more than 50 heads is $1-Pr(\text{observing at least 50 heads})$.  The probability of observing at least 50 heads is provided by the CDF of the binomial distribution.  Evaluation using python gave $\boxed{ Pr(\text{more than 50 heads}) = 1 -0.5 = 0.5}$.
+
+
+\section*{Question 3}
+
+Using the cdf of the normal distribution, I found the probability of the team favored by 3.5 to be 0.631.  This implies that the probability for the favored team to win by less than 4 points is approximately $\boxed{0.369}$.  In a similar fashion, I found that the probability for the team favored by 9 to not win by at least 10 points to be approximately $\boxed{0.21}$.\newline
+
+\noindent
+Although there was  not an image  of data included, my inclination is to say you should be more confident on bets with large spreads if you expect the underdog to perform better than the consensus, and on small spreads if you believe the winning team will exceed the anticipated score. 
+
+
+\section*{Question 4}
+In the situation provided with D6 and D12 dice, the sample space is given as $\Omega=\{1,2,3,\dots,12\}$.  In this scenario, the event space is equivalent to the sample space.  Since drawing each die from the urn is equally likely, the probability for rolling any number is, again, equal to the the number of ways a roll can occur over the number of rolls that can happen.  For event $E$, $p(E) = \frac{\text{\# ways E can occur}}{\text{\# of things that can happen}}$.  In this case, their are 2 possible ways to roll a 1-6, and one way to roll a 7-12.  This totals to 18 possible things that can occur.  So the probability of rolling a number 1-6 is $\frac{2}{18}= \boxed{\frac{1}{9}}$.  The probability of rolling a number 7-12 is $\boxed{\frac{1}{18}}$.  For the 12 possible outcomes, the sum of their probabilities equals 1. \newline
+
+\noindent
+If the process is repeated and the sum of the two numbers is recorded, the probability triple changes as follows.  First, sample space $\Omega$ would remain unchanged.  The event space, however, would now be the set containing all possible sums of the two dice, D6 and D6, D6 and D12, and D12 and D12 (basically 2-24).  This can be further simplified to all sums of D12 and D12.  So to get the probabilities for each of the events, we must determine all the possible combinations of outcomes in the union of the two experiments and the number of ways to obtain each event.  Then we can do the same as earlier.
+
+
+\section*{Question 5}
+
+\section*{Question 6}
+
+
+
+\end{document}

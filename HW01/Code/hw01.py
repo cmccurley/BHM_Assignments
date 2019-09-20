@@ -41,8 +41,8 @@ import pandas as pd
 
 ############################ Question 2 ##############################
 
-points = -4
-mean = 0
+points = 4
+mean = 3.5
 var =  14^2
 
 rv = scipy.stats.norm(mean, var)

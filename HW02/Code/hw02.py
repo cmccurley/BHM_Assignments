@@ -91,8 +91,8 @@ def bin_convergence_to_normal(n, p):
     est_var = np.var(samples)/samples.shape[1]
     
     ##### plot histogram overlain with expected gaussian #####
-#    plt.figure()
-    plt.hist(samples[0,:], bins=21, density=True)
+    plt.figure()
+    plt.hist(samples[0,:], bins=51, density=True)
     
     # overlay expected Gaussian 
     mu = n*true_mean
@@ -104,6 +104,41 @@ def bin_convergence_to_normal(n, p):
     plt.title(f'Binomial p={p}, n={n} \n The. Mean={true_mean}, The. Var={true_var} \n Emp. Mean={est_mean}, Emp. Var={est_var}')
     plt.show()
     
+    return
+
+"""
+***********************************************************************
+    *  Func:  poisson_convergence_to_normal
+    *  Desc:  
+**********************************************************************
+"""
+def poisson_convergence_to_normal(n, lam):
+    
+    # generate samples from binomial
+    samples = np.random.poisson(lam, size=(1,n))
+    
+    # calculate theoretical mean and variance
+    true_mean = lam
+    true_var = lam
+    
+    # calculate empirical mean and variance
+    est_mean = np.mean(samples)
+    est_var = np.var(samples)
+    
+    ##### plot histogram overlain with expected gaussian #####
+    nBins = len(np.unique(samples))
+    plt.figure()
+    plt.hist(samples[0,:], bins=nBins, density=True)
+    
+    # overlay expected Gaussian 
+    mu = true_mean
+    variance = true_var
+    sigma = math.sqrt(variance)
+    x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
+    plt.plot(x, stats.norm.pdf(x, mu, sigma), c='r')
+    
+    plt.title(f'Poisson lambda={lam}, \n The. Mean={true_mean}, The. Var={true_var} \n Emp. Mean={est_mean}, Emp. Var={est_var}')
+    plt.show()
     
     return
 
@@ -116,19 +151,16 @@ if __name__== "__main__":
     # Shows the convergence of the binomial and poisson distributions
     # to the normal for a range of parameters
     
-    # Show convergence of the Binomial distribution
-    numSamples = 1000
+    ##### Show convergence of the Binomial to Normal distribution #####
+    numSamples = 100000
     p = 0.5
-    distParameters = np.array([.1 ,.3 ,.5 ,.7, .9])
+#    bin_convergence_to_normal(numSamples, p)
     
     
-    # show convergence of binomial to normal distribution
-    bin_convergence_to_normal(numSamples, p)
-    
-    
-    #rv = scipy.stats.binom(numTrials, numSuccess)
-    #probExactly50 = scipy.stats.binom.pmf(numSuccess, numTrials, probSuccess)
-    #probAtLeast50 =  scipy.stats.binom.cdf(numSuccess, numTrials, probSuccess )
+    ##### Show convergence of the Poisson distribution to Normal #####
+    numSamples = 1000000
+    lam = 100
+    poisson_convergence_to_normal(numSamples, lam)
     
     ############################ Question 3 ##############################
     

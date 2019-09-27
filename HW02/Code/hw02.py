@@ -15,8 +15,8 @@ Created on Fri Aug 30 15:52:16 2019
 """
 #Clear workspace
 import os
-clear = lambda: os.system('cls')
-clear()
+#clear = lambda: os.system('cls')
+#clear()
 
 ######################################################################
 ######################### Import Packages ############################
@@ -25,8 +25,9 @@ clear()
 # basics
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy.stats
+import scipy.stats as stats
 import pandas as pd
+import math
 
 
 ######################################################################
@@ -70,6 +71,42 @@ def find_convergence_in_dist(numSamples, distParameters, dist):
         
     return dataStruct
 
+"""
+***********************************************************************
+    *  Func:  bin_convergence_to_normal
+    *  Desc:  
+**********************************************************************
+"""
+def bin_convergence_to_normal(n, p):
+    
+    # generate samples from binomial
+    samples = np.random.binomial(n,p,size=(1,n))
+    
+    # calculate theoretical mean and variance
+    true_mean = p
+    true_var = (1-p)*p
+    
+    # calculate empirical mean and variance
+    est_mean = np.mean(samples)/len(samples)
+    est_var = np.var(samples)/len(samples)
+    
+    ##### plot histogram overlain with expected gaussian #####
+#    plt.figure()
+    plt.hist(samples)
+    
+    # overlay expected Gaussian 
+    mu = n*true_mean
+    variance = n*true_var
+    sigma = math.sqrt(variance)
+    x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
+    plt.plot(x, stats.norm.pdf(x, mu, sigma), c='r')
+    
+    plt.title(f'Binomial p={p}, n={n} \n The. Mean={true_mean}, The. Var={true_var} \n Emp. Mean={est_mean}, Emp. Var={est_var}')
+    plt.show()
+    
+    
+    return
+
 ######################################################################
 ############################ Questions ###############################
 ######################################################################
@@ -80,10 +117,14 @@ if __name__== "__main__":
     # to the normal for a range of parameters
     
     # Show convergence of the Binomial distribution
-    numSamples = np.arange(1,100001,500)
+    numSamples = 1000
+    p = 0.5
     distParameters = np.array([.1 ,.3 ,.5 ,.7, .9])
     
-    simData = find_convergence_in_dist(numSamples, distParameters, dist='binomial')
+    
+    # show convergence of binomial to normal distribution
+    bin_convergence_to_normal(numSamples, p)
+    
     
     #rv = scipy.stats.binom(numTrials, numSuccess)
     #probExactly50 = scipy.stats.binom.pmf(numSuccess, numTrials, probSuccess)

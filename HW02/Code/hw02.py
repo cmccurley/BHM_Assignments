@@ -87,12 +87,12 @@ def bin_convergence_to_normal(n, p):
     true_var = (1-p)*p
     
     # calculate empirical mean and variance
-    est_mean = np.mean(samples)/len(samples)
-    est_var = np.var(samples)/len(samples)
+    est_mean = np.mean(samples)/samples.shape[1]
+    est_var = np.var(samples)/samples.shape[1]
     
     ##### plot histogram overlain with expected gaussian #####
 #    plt.figure()
-    plt.hist(samples)
+    plt.hist(samples[0,:], bins=21, density=True)
     
     # overlay expected Gaussian 
     mu = n*true_mean

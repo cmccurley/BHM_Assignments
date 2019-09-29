@@ -73,7 +73,7 @@ def find_convergence_in_dist(numSamples, distParameters, dist):
 
 """
 ***********************************************************************
-    *  Func:  bin_convergence_to_normal
+    *  Func:  bin_convergence_to_normal()
     *  Desc:  
 **********************************************************************
 """
@@ -108,7 +108,7 @@ def bin_convergence_to_normal(n, p):
 
 """
 ***********************************************************************
-    *  Func:  poisson_convergence_to_normal
+    *  Func:  poisson_convergence_to_normal()
     *  Desc:  
 **********************************************************************
 """
@@ -142,6 +142,102 @@ def poisson_convergence_to_normal(n, lam):
     
     return
 
+"""
+***********************************************************************
+    *  Func:  plot_gamma()
+    *  Desc:  
+**********************************************************************
+"""
+def plot_gamma(alpha, beta):
+    
+    # define range to plot
+    x = np.linspace(0,10,1000)
+    
+    # plot gamma distribution
+    plt.figure()
+    leg = []
+    
+    for alph in alpha:
+        plt.plot(x, stats.gamma.pdf(x, a=alph, scale=(1/beta)))
+        legEntry = 'alpha = ' + str(alph)
+        leg.append(legEntry)
+    plt.legend(leg)
+    plt.title('Gamma Distribution')
+    
+    plt.show()
+    
+    return
+
+
+"""
+***********************************************************************
+    *  Func:  binomial_monte_carlo()
+    *  Desc:  
+**********************************************************************
+"""
+def binomial_monte_carlo(p, numFlips):
+    
+    simData = dict()
+    simData["p"] = p
+    
+    for n in numFlips:
+        print(f'Generating data for p={p}, n={n}')
+        simData[str(n)] = np.random.binomial(n, p, size = (1, 1000000)) 
+    
+    
+    return simData
+
+
+"""
+***********************************************************************
+    *  Func:  est_prop_heads()
+    *  Desc:  
+**********************************************************************
+"""
+def est_prop_heads(simData, numFlips):
+    
+    for n in numFlips:
+        data = simData[str(n)]
+        
+        # calculate proportions of heads
+        propVec = data/n 
+        
+        # get mean of proportions
+        meanPropVec = np.mean(propVec)
+        
+        
+        # get deviation within 95%
+    
+    return 
+
+
+"""
+***********************************************************************
+    *  Func:  estimate_p_val()
+    *  Desc:  
+**********************************************************************
+"""
+def estimate_p_val(simData, numFlips):
+    mle_est = dict()
+    
+    true_p_val = simData["p"]
+    
+    for n in numFlips:
+        data = simData[str(n)]
+        
+        # calculate proportions of heads
+        propVec = data/n 
+        
+        # estimate p value
+        mle_p_est = np.sum(propVec)/propVec.shape[1] 
+        
+        plt.figure()
+        plt.hist(data[0,:], bins=n, density=True)
+        plt.title(f'Histogram of Binomial Trials \n Number of Flips={n} \n True p Value={true_p_val} \n MLE Estimate={mle_p_est}')
+        
+        
+    return mle_p_est
+
 ######################################################################
 ############################ Questions ###############################
 ######################################################################
@@ -160,8 +256,54 @@ if __name__== "__main__":
     ##### Show convergence of the Poisson distribution to Normal #####
     numSamples = 1000000
     lam = 100
-    poisson_convergence_to_normal(numSamples, lam)
+#    poisson_convergence_to_normal(numSamples, lam)
     
     ############################ Question 3 ##############################
+    # plot the gamma distribution
+    
+    # define parameters
+    beta = 4
+    alpha = [0.1, 0.5, 1, 5, 10]
+    
+    # plot distribution
+#    plot_gamma(alpha, beta)
+    
+    
+    ############################ Question 4 ##############################
+    # run Monte Carlo simulations for flipping a coin with a known bias
+    
+    # set parameters
+    p = 0.3
+    numFlips = [5, 10, 50, 100]
+    
+    # generate data
+#    simData = binomial_monte_carlo(p, numFlips)
+#    np.save('Q4_data.npy', simData, allow_pickle=True)
+    
+    # load data
+    simData = np.load('Q4_data.npy', allow_pickle=True).item()
+    
+    # estimate bounds for expected value of each trial
+#    est_prop_heads(simData, numFlips)
+    
+    
+    ############################ Question 5 ##############################
+    # compute MLE estimate for p parameter of binomial
+    
+    # load data
+    simData = np.load('Q4_data.npy', allow_pickle=True).item()
+    
+    
+    # compute the MLE estimates
+    mle_est = estimate_p_val(simData, numFlips)
+    
+    ############################ Question 6 ##############################
+    
+    
+    
+    
+    
+    
+    
     
 

@@ -125,6 +125,7 @@ def plot_gamma(alpha, beta):
         leg.append(legEntry)
     plt.legend(leg)
     plt.title('Gamma Distribution')
+    plt.xlim(0,6)
     
     plt.show()
     
@@ -203,7 +204,7 @@ def estimate_p_val(simData, numFlips):
         
         plt.figure()
         plt.hist(data[0,:], bins=n, density=True)
-        plt.title(f'Histogram of Binomial Trials \n Number of Flips={n} \n True p Value={true_p_val} \n MLE Estimate={mle_p_est}')
+        plt.title(f'Histogram of Binomial Trials \n Number of Flips={n} \n True p Value={true_p_val} \n MLE Estimate={mle_p_est:.4f}')
         
         
     return
@@ -404,7 +405,7 @@ if __name__== "__main__":
     # to the normal for a range of parameters
     
     ##### Show convergence of the Binomial to Normal distribution #####
-    numSamples = 100000
+    numSamples = 1000000
     p = 0.5
 #    bin_convergence_to_normal(numSamples, p)
     
@@ -451,7 +452,7 @@ if __name__== "__main__":
     # compute MLE estimate for p parameter of binomial
     
     # load data
-#    simData = np.load('Q4_data.npy', allow_pickle=True).item()
+    simData = np.load('Q4_data.npy', allow_pickle=True).item()
     
     
     # compute the MLE estimates

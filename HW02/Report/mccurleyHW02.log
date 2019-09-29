@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000) (preloaded format=pdflatex 2019.9.15)  26 SEP 2019 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000) (preloaded format=pdflatex 2019.9.15)  29 SEP 2019 13:21
 entering extended mode
 **./mccurleyHW02.tex
 (mccurleyHW02.tex
@@ -426,20 +426,20 @@ LaTeX Info: Redefining \bm on input line 207.
 (mccurleyHW02.aux)
 \openout1 = `mccurleyHW02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -516,7 +516,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 38.
 
 (/home/cmccurley/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -526,46 +526,277 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
  (mccurleyHW02.out) (mccurleyHW02.out)
 \@outlinefile=\write3
 \openout3 = `mccurleyHW02.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_10.
+png, id=3, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_10.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_10.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_10.png  used on input line 65.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_100
+.png, id=5, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_100.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_100.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_100.png  used on input line 67.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_100
+0.png, id=6, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_1000.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_1000.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_1000.png  used on input line 69.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_100
+00.png, id=7, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_10000.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_10000.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_10000.png  used on input line 71.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_100
+000.png, id=8, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_100000.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_100000.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_100000.png  used on input line 73.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin_100
+0000.png, id=9, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bi
+n_1000000.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_bin
+_1000000.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_bin_1000000.png  used on input line 75.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 [1
 
 {/home/cmccurley/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_pois_1.
+png, id=20, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_po
+is_1.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_poi
+s_1.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_pois_1.png  used on input line 82.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_pois_10
+.png, id=21, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_po
+is_10.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_poi
+s_10.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_pois_10.png  used on input line 84.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_pois_10
+0.png, id=22, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_po
+is_100.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_poi
+s_100.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_pois_100.png  used on input line 86.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_pois_10
+00.png, id=23, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_po
+is_1000.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q2_poi
+s_1000.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q2_pois_1000.png  used on input line 88.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+ [2 </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q2_bin_1
+0.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q2_bi
+n_100.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q
+2_bin_1000.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Ima
+ges/q2_bin_10000.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Repo
+rt/Images/q2_bin_100000.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW
+02/Report/Images/q2_bin_1000000.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q3_gamma_
+skew".png, id=42, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q3_g
+amma_skew".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q3_ga
+mma_skew".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/""q3_gamma_skew".png  used on input line 101.
+(pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle_5.p
+ng, id=43, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_ml
+e_5.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle
+_5.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mle_5.png  used on input line 121.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle_10.
+png, id=44, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_ml
+e_10.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle
+_10.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mle_10.png  used on input line 123.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle_50.
+png, id=45, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_ml
+e_50.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle
+_50.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mle_50.png  used on input line 125.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle_100
+.png, id=46, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_ml
+e_100.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mle
+_100.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mle_100.png  used on input line 127.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+ [3 </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q2_pois_
+1.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q2_po
+is_10.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q
+2_pois_100.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Ima
+ges/q2_pois_1000.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Repo
+rt/Images/q3_gamma_skew.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_5.pn
+g, id=63, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc
+_5.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_
+5.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mc_5.png  used on input line 134.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_10.p
+ng, id=64, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc
+_10.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_
+10.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mc_10.png  used on input line 136.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_50.p
+ng, id=65, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc
+_50.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_
+50.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mc_50.png  used on input line 138.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_100.
+png, id=66, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc
+_100.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/"q5_mc_
+100.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/"q5_mc_100.png  used on input line 140.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_trajec
+tories".png, id=67, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_t
+rajectories".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_tr
+ajectories".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/""q6_trajectories".png  used on input line 154.
+(pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
+ [4 </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q5_mle_5
+.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q5_mle
+_10.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q5_
+mle_50.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/
+q5_mle_100.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Ima
+ges/q5_mc_5.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Im
+ages/q5_mc_10.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/
+Images/q5_mc_50.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Repor
+t/Images/q5_mc_100.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_observ
+ation_error".png, id=92, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_o
+bservation_error".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_ob
+servation_error".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/""q6_observation_error".png  used on input line 163.
+(pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
 
-(mccurleyHW02.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_proces
+s_error".png, id=93, 462.528pt x 346.896pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_p
+rocess_error".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/""q6_pr
+ocess_error".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW02/R
+eport/Images/""q6_process_error".png  used on input line 172.
+(pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+[5 </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Images/q6_trajec
+tories.png>] [6 </media/edrive/Bayesian_Methods/BHM_Assignments/HW02/Report/Ima
+ges/q6_observation_error.png> </media/edrive/Bayesian_Methods/BHM_Assignments/H
+W02/Report/Images/q6_process_error.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+ (mccurleyHW02.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `mccurleyHW02.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 9918 strings out of 494857
- 150194 string characters out of 3177992
- 259029 words of memory out of 3000000
- 13446 multiletter control sequences out of 15000+200000
- 5206 words of font info for 19 fonts, out of 3000000 for 9000
+ 10078 strings out of 494857
+ 159090 string characters out of 3177992
+ 261353 words of memory out of 3000000
+ 13551 multiletter control sequences out of 15000+200000
+ 5505 words of font info for 20 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 44i,6n,42p,535b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,49p,535b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
 10.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mti10.pfb>
-Output written on mccurleyHW02.pdf (1 page, 46715 bytes).
+mr8.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmti10.pfb>
+Output written on mccurleyHW02.pdf (6 pages, 581028 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

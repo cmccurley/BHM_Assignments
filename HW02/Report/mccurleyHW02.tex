@@ -58,48 +58,61 @@ As stated in the class textbook, a \textit{random variable} is a quantity that c
 %=================== Question 2 ====================
 %===================================================
 \section*{Question 2}
-The following plots demonstrate convergence of the Binomial and Poisson distributions to a Normal.
+The following plots demonstrate convergence of the Binomial and Poisson distributions to a Normal.  It can be observed in Figure \ref{fig:q2_pois_to_normal}, that as the $\lambda$ parameter of the Poisson grows to infinity, the distribution of samples converges to a Normal centered at $\lambda$.  The same is true for the Binomial in Figure \ref{fig:q2_bin_to_normal}.  For a fixed probability of success, $p=0.5$, the distribution converges to a Normal. 
 
 \begin{figure}[H]%
 	\centering
-	\subfloat[Nose]{{\includegraphics[width=5cm]{q2_bin_10} }}%
+	\subfloat[$\lambda=1$]{{\includegraphics[width=5cm]{q2_pois_1} }}%
 	\qquad
-	\subfloat[Mouth]{{\includegraphics[width=5cm]{q2_bin_100} }}%
+	\subfloat[$\lambda=10$]{{\includegraphics[width=5cm]{q2_pois_10} }}%
 	\qquad
-	\subfloat[Left Eye]{{\includegraphics[width=5cm]{q2_bin_1000} }}%
+	\subfloat[$\lambda=100$]{{\includegraphics[width=5cm]{q2_pois_100} }}%
 	\qquad
-	\subfloat[Right Eye]{{\includegraphics[width=5cm]{q2_bin_10000} }}%
+	\subfloat[$\lambda=1000$]{{\includegraphics[width=5cm]{q2_pois_1000} }}%
+	\caption{Convergence of the Poisson distribution to a Normal distribution for a fixed number of samples, $n=100000$. As the mean parameter $\lambda$ goes to infinity, the distribution of Poisson samples converges to a Normal.}%
+	\label{fig:q2_pois_to_normal}%
+\end{figure}
+
+\begin{figure}[H]%
+	\centering
+	\subfloat[$n=10$]{{\includegraphics[width=5cm]{q2_bin_10} }}%
 	\qquad
-	\subfloat[Left Eye]{{\includegraphics[width=5cm]{q2_bin_100000} }}%
+	\subfloat[$n=100$]{{\includegraphics[width=5cm]{q2_bin_100} }}%
 	\qquad
-	\subfloat[Right Eye]{{\includegraphics[width=5cm]{q2_bin_1000000} }}%
-	\caption{}%
+	\subfloat[$n=1000$]{{\includegraphics[width=5cm]{q2_bin_1000} }}%
+	\qquad
+	\subfloat[$n=10000$]{{\includegraphics[width=5cm]{q2_bin_10000} }}%
+	\qquad
+	\subfloat[$n=100000$]{{\includegraphics[width=5cm]{q2_bin_100000} }}%
+	\qquad
+	\subfloat[$n=1000000$]{{\includegraphics[width=5cm]{q2_bin_1000000} }}%
+	\caption{Convergence of the Binomial distribution to a Normal distribution.  The true $p$ value of the Binomial was fixed at $p=0.5$.  As N goes to infinity, the distribution of Binomial samples converges to a Normal.}%
 	\label{fig:q2_bin_to_normal}%
 \end{figure}
 
-\begin{figure}[H]%
-	\centering
-	\subfloat[Nose]{{\includegraphics[width=5cm]{q2_pois_1} }}%
-	\qquad
-	\subfloat[Mouth]{{\includegraphics[width=5cm]{q2_pois_10} }}%
-	\qquad
-	\subfloat[Left Eye]{{\includegraphics[width=5cm]{q2_pois_100} }}%
-	\qquad
-	\subfloat[Right Eye]{{\includegraphics[width=5cm]{q2_pois_1000} }}%
-	\caption{}%
-	\label{fig:q2_pois_to_normal}%
-\end{figure}
+
 
 %===================================================
 %=================== Question 3 ====================
 %===================================================
+\newpage
 \section*{Question 3}
 
+For the Gamma distribution, gamma($\alpha$,$\beta$), it is known that the skewness is parameterized by the shape, or $\gamma=\frac{2}{\sqrt{\alpha}}$.  The class text book used moment matching with the Gamma to find the mean and variance as $\mu=\frac{\alpha}{\beta}$ and $\sigma^2=\frac{\alpha}{\beta^2}$, respectively.  Using moment matching, we can find the skewness as $\gamma=\frac{\mu_3}{(\sigma^2)^{\frac{3}{2}}}$, where $\mu_3 = \mathbb{E}[(X-\mu)^3]=\mathbb{E}[X^3]-3\mu \sigma^2 - \mu^3$ and $ \mathbb{E}[X^3]=\frac{(\alpha+2)(\alpha+1)\alpha}{\beta}$.  Therefore, 
+\begin{align*}
+	\gamma &= \frac{\mu_3}{(\sigma^2)^{\frac{3}{2}}} \\
+	&= \frac{\mathbb{E}[X^3]-3\mu \sigma^2 - \mu^3}{(\sigma^2)^{\frac{3}{2}}} \\
+	&= \frac{\frac{(\alpha+2)(\alpha+1)\alpha}{\beta} - 3(\frac{\alpha}{\beta})(\frac{\alpha}{\beta^2}) - (\frac{\alpha}{\beta})^3}{(\frac{\alpha}{\beta^2})^{\frac{3}{2}}} \\
+	&= \frac{2}{\sqrt{\alpha}}
+\end{align*}
+
+
+Figure \ref{fig:q3_gamma_skew} demonstrates pdfs of the Gamma distribution for various shape parameters, $\alpha$.
 \begin{center}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.75\textwidth]{"q3_gamma_skew"}
-		\caption{ }
+		\includegraphics[width=0.6\textwidth]{"q3_gamma_skew"}
+		\caption{Gamma pdf for various shape parameters, $\alpha$. }
 		\label{fig:q3_gamma_skew}
 	\end{figure}
 \end{center}

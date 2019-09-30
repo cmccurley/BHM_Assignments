@@ -9,7 +9,7 @@ Created on Fri Aug 30 15:52:16 2019
 ***********************************************************************
     *  File:  hw02.py
     *  Name:  Connor H. McCurley
-    *  Date:  2019-08-30
+    *  Date:  2019-09-23
     *  Desc:  
 **********************************************************************
 """
@@ -271,13 +271,13 @@ def compute_mc_std_error(p, numFlips):
     *  Desc:  Plot histogram of MC errors 
 **********************************************************************
 """
-def plot_error_hist(data):
+def plot_error_hist(p, data):
     
     # plot histogram of error for the mean estimates
     for n in data.keys():    
         
         mean_est = data[str(n)]["mean_est"]
-        mean_of_mean_est = data[str(n)]["mean_of_mean_est"]
+        mean_of_mean_est = np.mean(mean_est)
         std_of_mean_est = data[str(n)]["std_of_mean_est"]
         
         # plot histogram
@@ -438,7 +438,7 @@ if __name__== "__main__":
 #    np.save('Q4_data.npy', simData, allow_pickle=True)
     
     # load data
-#    simData = np.load('Q4_data.npy', allow_pickle=True).item()
+    simData = np.load('Q4_data.npy', allow_pickle=True).item()
     
     # estimate bounds for expected value of each trial
 #    est_prop_heads(simData, numFlips)
@@ -462,8 +462,8 @@ if __name__== "__main__":
 #    error_data = compute_mc_std_error(p, numFlips)
     
     # plot error histograms
-#    plot_error_hist(error_data)
-    
+#    plot_error_hist(p, error_data)
+#    
     ############################ Question 6 ##############################
     
     # plot simulated trajectories for r and K

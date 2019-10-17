@@ -1,0 +1,181 @@
+### Stan demo
+
+# clear environment
+rm(list=ls())
+
+library("rstan")
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
+
+
+##########################################################
+##################### Question 1 Problem 1 ###############
+##########################################################
+# 
+# tauVect = c(0.1, 0.5, 1, 5, 10, 50, 100)
+# 
+# # initialize theta matrix
+# thetaMat = matrix(, nrow = 7, ncol = 8)
+# 
+# idx = 1
+# 
+# for (t in tauVect){
+# 
+# # load data
+#   schools_dat <- list(J = 8,
+#                       y = c(28,  8, -3,  7, -1,  1, 18, 12),
+#                       sigma = c(15, 10, 16, 11,  9, 11, 10, 18),
+#                       tau = t)
+# 
+#   # fit stan model
+#   fit <- stan(file = '8schools_q1_p1.stan', data = schools_dat)
+#   print(fit)
+# 
+#   # access mean estamtes for each school mean (theta)
+#   theta_summary =  summary(fit, pars = c("theta"))$summary
+#   thetas = theta_summary[,1]
+#   thetaMat[idx,] = thetas
+# 
+#   idx = idx+1
+# }
+# 
+# ##### plot theta estimates for each school for varying taus #####
+# # generate random colors for plotting
+# cl <- rainbow(8)
+# colVect = matrix(, nrow = 8, ncol = 0)
+# colVect[1] = cl[1]
+# 
+# # create plot
+# plot.new
+# plot(tauVect,thetaMat[,1], type='l',col=cl[1], lwd=2, xlab="Tau",ylab="Theta Value", xlim=c(0,100), ylim=c(-10, 40))
+# # axis(1, at=tauVect)
+# 
+# for (idx in 2:length(thetaMat[1,])){
+#   lines(tauVect,thetaMat[,idx], col=cl[idx],lwd=2)
+#   colVect[idx] = cl[idx]
+# }
+# title(main="Theta Est for Fixed Tau")
+# legend(x=0,y=40, schools_dat$y ,col = colVect, lwd = 1, cex = 0.8)
+
+##########################################################
+##################### Question 1 Problem 2 ###############
+##########################################################
+# # define scale vector
+# scaleVect = c(1,5,10,50)
+# 
+# # initialize theta matrix
+# thetaMat = matrix(, nrow = length(scaleVect), ncol = 8)
+# idx = 1
+# 
+# for (s in scaleVect){
+# 
+#   # load data
+#   schools_dat <- list(J = 8,
+#                       y = c(28,  8, -3,  7, -1,  1, 18, 12),
+#                       sigma = c(15, 10, 16, 11,  9, 11, 10, 18),
+#                       scale = s)
+# 
+#   # fit stan model
+#   fit <- stan(file = '8schools_q1_p2.stan', data = schools_dat)
+#   print(fit)
+# 
+#   # access mean estamtes for each school mean (theta)
+#   theta_summary =  summary(fit, pars = c("theta"))$summary
+#   thetas = theta_summary[,1]
+#   thetaMat[idx,] = thetas
+# 
+#   idx = idx+1
+# }
+# 
+# ##### plot theta estimates for each school for varying taus #####
+# # generate random colors for plotting
+# cl <- rainbow(8)
+# colVect = matrix(, nrow = 8, ncol = 0)
+# colVect[1] = cl[1]
+# 
+# # create plot
+# plot.new
+# plot(scaleVect,thetaMat[,1], type='l',col=cl[1], lwd=2, xlab="Scale of Variance on Tau Prior",ylab="Theta Value", xlim=c(0,50), ylim=c(0, 15))
+# # axis(1, at=tauVect)
+# 
+# for (idx in 2:length(thetaMat[1,])){
+#   lines(scaleVect,thetaMat[,idx], col=cl[idx],lwd=2)
+#   colVect[idx] = cl[idx]
+# }
+# title(main="Theta Est for Est Tau")
+# legend(x=0,y=15,schools_dat$y,col = colVect, lwd = 1, cex = 0.5)
+
+
+##########################################################
+##################### Question 2 Problem 1 ###############
+##########################################################
+# 
+# ### Simulating fake logistic growth data
+# 
+# # Define Parameters
+# proc_error = 5
+# N = 50
+# init = 50
+# K = 100
+# rVect = c(0.1, 0.5, 1)
+# 
+# # Simulate process with no error for 3 different r values
+# y = matrix(NA, nrow=3, ncol=N)
+# 
+# y[,1] = init;
+# 
+# for (idx in 1:length(rVect)){
+#   r = rVect[idx]
+#   for(i in 2:N){
+#     y[idx,i] <- y[idx,i-1] + r*y[idx,i-1]*(1-y[idx,i-1]/K)
+#   }
+# }
+# 
+# obs_N = seq(1,N,1)
+# 
+# # plot logistic curve with process error
+# plot.new
+# plot(obs_N, y[1,], type='l',col='blue', lwd=2, xlab="N",ylab="Process Value", xlim=c(0,N))
+# lines(obs_N, y[2,],col='green', lwd=2)
+# lines(obs_N, y[3,],col='red', lwd=2)
+# title(main="Logistic Growth")
+# legend("bottomright", "(x,y)",rVect,col = c("blue", "green", "red"), lwd = 1, cex = 1, title="R")
+
+##########################################################
+##################### Question 2 Problem 2 ###############
+##########################################################
+# 
+# ### Simulating fake logistic growth data with observation error
+# 
+# # Define Parameters
+# proc_error = 5
+# N = 50
+# init = 50
+# K = 100
+# rVect = c(0.1, 0.5, 1)
+# obs_error = 2
+# 
+# # Simulate process with no error for 3 different r values
+# y = matrix(NA, nrow=3, ncol=N)
+# 
+# y[,1] = init;
+# 
+# for (idx in 1:length(rVect)){
+#   r = rVect[idx]
+#   for(i in 2:N){
+#     y[idx,i] <- y[idx,i-1] + r*y[idx,i-1]*(1-y[idx,i-1]/K)
+#     y[idx,i] = y[idx,i] + rnorm(1,0,obs_error)
+#   }
+# }
+# 
+# obs_N = seq(1,N,1)
+# 
+# # plot logistic curve with process error
+# plot.new
+# plot(obs_N, y[1,], type='p',col='blue', xlab="N",ylab="Process Value", xlim=c(0,N))
+# points(obs_N, y[2,],col='green')
+# points(obs_N, y[3,],col='red')
+# title(main="Logistic Growth with Observation Error Variance 2")
+# legend("bottomright", "(x,y)",rVect,col = c("blue", "green", "red"), lwd = 1, cex = 1, title="R")
+

@@ -116,7 +116,7 @@ Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
 # # Define Parameters
 # proc_error = 5
 # N = 50
-# init = 50
+# init = 20
 # K = 100
 # rVect = c(0.1, 0.5, 1)
 # 
@@ -151,12 +151,12 @@ Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
 # # Define Parameters
 # proc_error = 5
 # N = 50
-# init = 50
+# init = 20
 # K = 100
 # rVect = c(0.1, 0.5, 1)
 # obs_error = 2
 # 
-# # Simulate process with no error for 3 different r values
+# # Simulate process with observation error for 3 different r values
 # y = matrix(NA, nrow=3, ncol=N)
 # 
 # y[,1] = init;
@@ -179,3 +179,152 @@ Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
 # title(main="Logistic Growth with Observation Error Variance 2")
 # legend("bottomright", "(x,y)",rVect,col = c("blue", "green", "red"), lwd = 1, cex = 1, title="R")
 
+##########################################################
+##################### Question 2 Problem 3 ###############
+##########################################################
+# 
+# # Run stan simulations for the three r values 
+# # and plot histograms 
+# 
+# # Define Parameters
+# N = 50
+# init = 20
+# K = 100
+# rVect = c(0.1, 0.5, 1)
+# obs_error = 2
+# 
+# # Simulate process with observation error for 3 different r values
+# # Generate data
+# y = matrix(NA, nrow=3, ncol=N)
+# 
+# y[,1] = init;
+# 
+# for (idx in 1:length(rVect)){
+#   r = rVect[idx]
+#   for(i in 2:N){
+#     y[idx,i] <- y[idx,i-1] + r*y[idx,i-1]*(1-y[idx,i-1]/K)
+#     y[idx,i] = y[idx,i] + rnorm(1,0,obs_error)
+#   }
+# }
+# 
+# obs_N = seq(1,N,1)
+# 
+# ###### Simulation for r = 0.1 #############
+# 
+# # define data
+# stan_data <- list(N=N,y=y[1,])
+# 
+# # initial conditions
+# initf1 <- function() {
+#   list(r = 0.1, K = 100, mu = array(1,dim=c(1,100)), obs_error = 2)
+# } 
+# 
+# # instantiate model
+# logistic_ss1 <- stan(file = "logistic_Bayes_q2_p_3_obs_error_only.stan", data = stan_data,
+#                      chains = 6, iter = 1000, init = initf1)
+# 
+# mu_infer <- extract(logistic_ss1, pars = c("mu"))[[1]]
+# 
+# post_draws <- as.data.frame(t(mu_infer))
+# library(reshape2)
+# post_melt <- melt(post_draws)
+# 
+# # Plotting model fit to data with posterior draws 
+# # of the latent variable 
+# ggplot() + geom_point(data=data.frame(x=obs_N,y=y[1,]),aes(x=x,y=y),color="red") + 
+#     ggtitle("Data Realizations for r=0.1")
+# 
+# # extract estimated parameters for r, K, and observation error variance
+# par_infer <- extract(logistic_ss1, pars = c("r", "K", "obs_error"))
+# 
+# # Plot histogram for r
+# r_post <- ggplot(data = data.frame(x = par_infer[[1]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = 0.1),color = "red") + ggtitle("Histogram of r for a true value of 0.1")
+# 
+# print(r_post)
+# 
+# # plot histogram for observation error variance 
+# obsError_post <- ggplot(data = data.frame(x = par_infer[[3]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = obs_error),color = "red") + ggtitle("Histogram of Obs. Error Variance for a true value of 2")
+# 
+# print(obsError_post)
+# 
+# ###### Simulation for r = 0.5 #############
+# 
+# # define data
+# stan_data <- list(N=N,y=y[2,])
+# 
+# # initial conditions
+# initf1 <- function() {
+#   list(r = 0.5, K = 100, mu = array(1,dim=c(1,100)), obs_error = 2)
+# } 
+# 
+# # instantiate model
+# logistic_ss1 <- stan(file = "logistic_Bayes_q2_p_3_obs_error_only.stan", data = stan_data,
+#                      chains = 6, iter = 1000, init = initf1)
+# 
+# mu_infer <- extract(logistic_ss1, pars = c("mu"))[[1]]
+# 
+# post_draws <- as.data.frame(t(mu_infer))
+# library(reshape2)
+# post_melt <- melt(post_draws)
+# 
+# # Plotting model fit to data with posterior draws 
+# # of the latent variable 
+# ggplot() + geom_point(data=data.frame(x=obs_N,y=y[2,]),aes(x=x,y=y),color="red") + 
+#   ggtitle("Data Realizations for r=0.5")
+# 
+# # extract estimated parameters for r, K, and observation error variance
+# par_infer <- extract(logistic_ss1, pars = c("r", "K", "obs_error"))
+# 
+# # Plot histogram for r
+# r_post <- ggplot(data = data.frame(x = par_infer[[1]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = 0.5),color = "red") + ggtitle("Histogram of r for a true value of 0.5")
+# 
+# print(r_post)
+# 
+# # plot histogram for observation error variance 
+# obsError_post <- ggplot(data = data.frame(x = par_infer[[3]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = obs_error),color = "red") + ggtitle("Histogram of Obs. Error Variance for a true value of 2")
+# 
+# print(obsError_post)
+# 
+# ###### Simulation for r = 1 #############
+# 
+# # define data
+# stan_data <- list(N=N,y=y[3,])
+# 
+# # initial conditions
+# initf1 <- function() {
+#   list(r = 1, K = 100, mu = array(1,dim=c(1,100)), obs_error = 2)
+# } 
+# 
+# # instantiate model
+# logistic_ss1 <- stan(file = "logistic_Bayes_q2_p_3_obs_error_only.stan", data = stan_data,
+#                      chains = 6, iter = 1000, init = initf1)
+# 
+# mu_infer <- extract(logistic_ss1, pars = c("mu"))[[1]]
+# 
+# post_draws <- as.data.frame(t(mu_infer))
+# library(reshape2)
+# post_melt <- melt(post_draws)
+# 
+# # Plotting model fit to data with posterior draws 
+# # of the latent variable 
+# ggplot() + geom_point(data=data.frame(x=obs_N,y=y[3,]),aes(x=x,y=y),color="red") + 
+#   ggtitle("Data Realizations for r=1") 
+# 
+# # extract estimated parameters for r, K, and observation error variance
+# par_infer <- extract(logistic_ss1, pars = c("r", "K", "obs_error"))
+# 
+# # Plot histogram for r
+# r_post <- ggplot(data = data.frame(x = par_infer[[1]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = 1),color = "red") + ggtitle("Histogram of r for a true value of 1")
+# 
+# print(r_post)
+# 
+# # plot histogram for observation error variance 
+# obsError_post <- ggplot(data = data.frame(x = par_infer[[3]]),aes(x)) + stat_density(alpha = 0.5) +
+#   geom_vline(aes(xintercept = obs_error),color = "red") + ggtitle("Histogram of Obs. Error Variance for a true value of 2")
+# 
+# print(obsError_post)

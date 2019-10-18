@@ -277,8 +277,6 @@ for(i in 1:N){
 plot(size_obs3[1,])
 
 
-
-
 # Thinning observations down to 30 
 obs_N3 <- sort(sample(seq(1,100,1),30))
 obs_sizes3 <- size_obs3[,obs_N3]

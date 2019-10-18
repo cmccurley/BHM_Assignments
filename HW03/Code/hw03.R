@@ -180,7 +180,7 @@ Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
 # legend("bottomright", "(x,y)",rVect,col = c("blue", "green", "red"), lwd = 1, cex = 1, title="R")
 
 ##########################################################
-##################### Question 2 Problem 3 ###############
+####################### Question 3 #######################
 ##########################################################
 # 
 # # Run stan simulations for the three r values 
@@ -328,3 +328,146 @@ Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
 #   geom_vline(aes(xintercept = obs_error),color = "red") + ggtitle("Histogram of Obs. Error Variance for a true value of 2")
 # 
 # print(obsError_post)
+
+##########################################################
+##################### Question 4 Problem 1 ###############
+##########################################################
+# simulate logistic growth with gamma process variance and 
+# gaussian observation variance
+
+
+# clear environment
+rm(list=ls())
+
+library("rstan")
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
+
+# Define Parameters
+N = 100
+r = 0.5
+n_sample_paths = 6
+init = 5
+K = 100
+dk = 0.25
+obs_error = 2
+obs_error_fixed = 0.8
+obs_N = seq(1,N,1)
+
+
+for(j in 1:M) {
+  for(i in 2:N){
+    size3[j,i] <- rgamma(1,shape=(size3[j,i-1] + r*size3[j,i-1]*(1-(size3[j,i-1]/K)))/dk,rate=1/dk);
+  }
+}
+
+
+# Simulate process with observation error for 3 different r values
+# Generate data
+
+######### process error only #############
+y = matrix(NA, nrow=n_sample_paths, ncol=N);
+
+y[,1] = init;
+
+for (idx in 1:n_sample_paths){
+  for(i in 2:N){
+    y[idx,i] <- rgamma(1,shape=(y[idx,i-1] + r*y[idx,i-1]*(1-(y[idx,i-1]/K)))/dk,rate=1/dk);
+  }
+}
+
+y_proc_error = y;
+
+
+
+# Plot sample paths
+color = c("red", "green", "blue", "#999999", "#E69F00", "#56B4E9")
+
+ggplot() + geom_point(data=data.frame(x=obs_N,y=y_proc_error[1,]),aes(x=x,y=y),color=color[1]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_error[2,]),aes(x=x,y=y),color=color[2]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_error[3,]),aes(x=x,y=y),color=color[3]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_error[4,]),aes(x=x,y=y),color=color[4]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_error[5,]),aes(x=x,y=y),color=color[5]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_error[6,]),aes(x=x,y=y),color=color[6]) +
+  theme_bw() + ggtitle('Sample Paths with Process Error only \n K=100, r=0.5, dK=0.25') +
+  xlab("N") + ylab("Process Value")
+
+
+
+###### process and observation error ##########
+y = y_proc_error;
+
+for (idx in 1:n_sample_paths){
+  for(i in 2:N){
+    y[idx,i] <- rnorm(1,y[idx,i],obs_error);
+  }
+}
+  
+y_proc_and_obs = y;
+
+color = c("red", "green", "blue", "#999999", "#E69F00", "#56B4E9")
+
+ggplot() + geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[1,]),aes(x=x,y=y),color=color[1]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[2,]),aes(x=x,y=y),color=color[2]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[3,]),aes(x=x,y=y),color=color[3]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[4,]),aes(x=x,y=y),color=color[4]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[5,]),aes(x=x,y=y),color=color[5]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_obs[6,]),aes(x=x,y=y),color=color[6]) +
+  theme_bw()  + ggtitle('Sample Paths with Process Error and Observation Error \n K=100, r=0.5, dK=0.25, obs_error=2')  +
+  xlab("N") + ylab("Process Value")
+
+
+###### process and fixed observation error ##########
+y = y_proc_error;
+
+for (idx in 1:n_sample_paths){
+  for(i in 2:N){
+    y[idx,i] <- y[idx,i] + obs_error_fixed
+  }
+}
+  
+y_proc_and_fixed_obs =  y
+
+# Plot Sample Paths
+color = c("red", "green", "blue", "#999999", "#E69F00", "#56B4E9")
+
+ggplot() + geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[1,]),aes(x=x,y=y),color=color[1]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[2,]),aes(x=x,y=y),color=color[2]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[3,]),aes(x=x,y=y),color=color[3]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[4,]),aes(x=x,y=y),color=color[4]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[5,]),aes(x=x,y=y),color=color[5]) +
+  geom_point(data=data.frame(x=obs_N,y=y_proc_and_fixed_obs[6,]),aes(x=x,y=y),color=color[6]) +
+  theme_bw()  + ggtitle('Sample Paths with Process Error and Fixed Observation Error \n K=100, r=0.5, dK=0.25, fixed_obs_error=0.8')  +
+  xlab("N") + ylab("Process Value")
+
+
+########################## Run MCMC Simulations ####################################
+# clear environment
+rm(list=ls())
+
+library("rstan")
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+Sys.setenv(LOCAL_CPPFLAGS = '-march=native')
+
+################### Process error only #####################################
+y = y_proc_error
+stan_data <- list(N=N,KK=n_sample_paths,M=n_sample_paths,y=y,times=obs_N)
+
+fit <- stan(file = "logistic5_Bayes.stan", data = stan_data, chains = 6, iter = 2000,
+                      seed = 12345)
+
+print(fit) # promising 
+
+traceplot(fit, pars = c("obs_error", "K", "r", "k"))
+
+
+################### Process and Observation Error ##########################
+
+
+
+################### Process and Fixed Observation Error #####################
+
+
+

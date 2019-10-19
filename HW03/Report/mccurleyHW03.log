@@ -1,0 +1,759 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000) (preloaded format=pdflatex 2019.9.15)  18 OCT 2019 20:03
+entering extended mode
+**./mccurleyHW03.tex
+(mccurleyHW03.tex
+LaTeX2e <2018-12-01>
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks15
+\thm@bodyfont=\toks16
+\thm@headfont=\toks17
+\thm@notefont=\toks18
+\thm@headpunct=\toks19
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks20
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen103
+))
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks22
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks23
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks24
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count100
+\c@@ppsavesec=\count101
+\c@@ppsaveapp=\count102
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen112
+\ar@mcellbox=\box29
+\extrarowheight=\dimen113
+\NC@list=\toks26
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box30
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks28
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen122
+\enit@toks=\toks29
+\enit@inbox=\box31
+\enit@count@id=\count106
+\enitdp@description=\count107
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen125
+\captionmargin@=\dimen126
+\captionwidth=\dimen127
+\caption@tempdima=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
+)
+\c@caption@flags=\count108
+\c@ContinuedFloat=\count109
+)
+\c@KVtest=\count110
+\sf@farskip=\skip52
+\sf@captopadj=\dimen132
+\sf@capskip=\skip53
+\sf@nearskip=\skip54
+\c@subfigure=\count111
+\c@subfigure@save=\count112
+\c@lofdepth=\count113
+\c@subtable=\count114
+\c@subtable@save=\count115
+\c@lotdepth=\count116
+\sf@top=\skip55
+\sf@bottom=\skip56
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks30
+\float@box=\box32
+\@float@everytoks=\toks31
+\@floatcapt=\box33
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count118
+\calc@Bcount=\count119
+\calc@Adimen=\dimen133
+\calc@Bdimen=\dimen134
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count120
+\calc@Cskip=\skip59
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen135
+\AM@pageheight=\dimen136
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box34
+\AM@global@opts=\toks32
+\AM@toc@title=\toks33
+\c@AM@survey=\count121
+\AM@templatesizebox=\box35
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/base/shortvrb.sty
+Package: shortvrb 2018/09/25 v2.1i Standard LaTeX documentation package (FMi)
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count122
+\l_MT_multwidth_dim=\dimen137
+\origjot=\skip60
+\l_MT_shortvdotswithinadjustabove_dim=\dimen138
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen139
+\l_MT_above_intertext_sep=\dimen140
+\l_MT_below_intertext_sep=\dimen141
+\l_MT_above_shortintertext_sep=\dimen142
+\l_MT_below_shortintertext_sep=\dimen143
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip61
+\multirow@cntb=\count123
+\multirow@dima=\skip62
+\bigstrutjot=\dimen144
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
+
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.st
+y
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen145
+\Hy@linkcounter=\count124
+\Hy@pagecounter=\count125
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count126
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4550.
+Package hyperref Info: Link nesting OFF on input line 4555.
+Package hyperref Info: Hyper index ON on input line 4558.
+Package hyperref Info: Plain pages OFF on input line 4565.
+Package hyperref Info: Backreferencing OFF on input line 4570.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4803.
+\c@Hy@tempcnt=\count127
+LaTeX Info: Redefining \url on input line 5156.
+\XeTeXLinkMargin=\dimen146
+\Fld@menulength=\count128
+\Field@Width=\dimen147
+\Fld@charsize=\dimen148
+Package hyperref Info: Hyper figures OFF on input line 6411.
+Package hyperref Info: Link nesting OFF on input line 6416.
+Package hyperref Info: Hyper index ON on input line 6419.
+Package hyperref Info: backreferencing OFF on input line 6426.
+Package hyperref Info: Link coloring OFF on input line 6431.
+Package hyperref Info: Link coloring with OCG OFF on input line 6436.
+Package hyperref Info: PDF/A mode OFF on input line 6441.
+LaTeX Info: Redefining \ref on input line 6481.
+LaTeX Info: Redefining \pageref on input line 6485.
+\Hy@abspage=\count129
+\c@Item=\count130
+\c@Hfootnote=\count131
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/06/12 v6.88h Hyperref driver for pdfTeX
+\Fld@listcount=\count132
+\c@bookmark@seq@number=\count133
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip63
+) (/home/cmccurley/.miktex/texmfs/install/tex/latex/commath/commath.sty)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen149
+\TX@old@table=\dimen150
+\TX@old@col=\dimen151
+\TX@target=\dimen152
+\TX@delta=\dimen153
+\TX@cols=\count134
+\TX@ftn=\toks34
+)
+(mccurleyHW03.aux)
+\openout1 = `mccurleyHW03.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count135
+\scratchdimen=\dimen154
+\scratchbox=\box36
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen155
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks36
+) (/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box37
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Link coloring OFF on input line 39.
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/home/cmccurley/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count141
+)
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
+ (mccurleyHW03.out) (mccurleyHW03.out)
+\@outlinefile=\write3
+\openout3 = `mccurleyHW03.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+
+(/home/cmccurley/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p1".pn
+g, id=5, 523.9575pt x 340.27126pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p
+1".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p1
+".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q1_p1".png  used on input line 65.
+(pdftex.def)             Requested size: 281.85587pt x 183.04799pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p2".pn
+g, id=8, 523.9575pt x 340.27126pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p
+2".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q1_p2
+".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q1_p2".png  used on input line 77.
+(pdftex.def)             Requested size: 281.85587pt x 183.04799pt.
+ [1
+
+{/home/cmccurley/.miktex/texmfs/data/pdftex/config/pdftex.map} </media/edrive/B
+ayesian_Methods/BHM_Assignments/HW03/Report/Images/q1_p1.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p1_no_
+error".png, id=25, 523.9575pt x 341.02406pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p
+1_no_error".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p1
+_no_error".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q2_p1_no_error".png  used on input line 93.
+(pdftex.def)             Requested size: 281.85587pt x 183.45296pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p2_pro
+cess_w_obs_error_2".png, id=26, 523.9575pt x 341.02406pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p
+2_process_w_obs_error_2".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q2_p2
+_process_w_obs_error_2".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q2_p2_process_w_obs_error_2".png  used on input line 102.
+(pdftex.def)             Requested size: 281.85587pt x 183.45296pt.
+ [2 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q1_p2.pn
+g> </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q2_p1_no_
+error.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_data_r
+_point_1".png, id=36, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_d
+ata_r_point_1".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_da
+ta_r_point_1".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q3_data_r_point_1".png  used on input line 116.
+(pdftex.def)             Requested size: 187.89914pt x 209.2244pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_hist_
+r_point_1.png, id=37, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_
+hist_r_point_1.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_h
+ist_r_point_1.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_r_hist_r_point_1.png  used on input line 124.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs_err
+or_hist_r_point_1.png, id=38, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_ob
+s_error_hist_r_point_1.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs
+_error_hist_r_point_1.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_obs_error_hist_r_point_1.png  used on input line 126.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+ [3 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q2_p2_pr
+ocess_w_obs_error_2.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/q3_data_r_point_1.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_data_r
+_point_5".png, id=46, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_d
+ata_r_point_5".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_da
+ta_r_point_5".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q3_data_r_point_5".png  used on input line 134.
+(pdftex.def)             Requested size: 140.92793pt x 156.92274pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_hist_
+r_point_5.png, id=47, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_
+hist_r_point_5.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_h
+ist_r_point_5.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_r_hist_r_point_5.png  used on input line 142.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs_err
+or_hist_r_point_5.png, id=48, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_ob
+s_error_hist_r_point_5.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs
+_error_hist_r_point_5.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_obs_error_hist_r_point_5.png  used on input line 144.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_data_r
+_1".png, id=49, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_d
+ata_r_1".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q3_da
+ta_r_1".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q3_data_r_1".png  used on input line 152.
+(pdftex.def)             Requested size: 187.89914pt x 209.2244pt.
+ [4 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q3_r_his
+t_r_point_1.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Im
+ages/q3_obs_error_hist_r_point_1.png> </media/edrive/Bayesian_Methods/BHM_Assig
+nments/HW03/Report/Images/q3_data_r_point_5.png> </media/edrive/Bayesian_Method
+s/BHM_Assignments/HW03/Report/Images/q3_r_hist_r_point_5.png> </media/edrive/Ba
+yesian_Methods/BHM_Assignments/HW03/Report/Images/q3_obs_error_hist_r_point_5.p
+ng>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_hist_
+r_1.png, id=69, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_
+hist_r_1.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_r_h
+ist_r_1.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_r_hist_r_1.png  used on input line 160.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs_err
+or_hist_r_1.png, id=70, 523.9575pt x 583.42969pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_ob
+s_error_hist_r_1.png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/"q3_obs
+_error_hist_r_1.png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/"q3_obs_error_hist_r_1.png  used on input line 162.
+(pdftex.def)             Requested size: 142.26378pt x 158.40945pt.
+ [5 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q3_data_
+r_1.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q3_
+r_hist_r_1.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Ima
+ges/q3_obs_error_hist_r_1.png>]
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sample
+_paths_proc_error_only".png, id=85, 523.9575pt x 341.02406pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_s
+ample_paths_proc_error_only".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sa
+mple_paths_proc_error_only".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q4_sample_paths_proc_error_only".png  used on input line 179.
+(pdftex.def)             Requested size: 281.85587pt x 183.45296pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sample
+_paths_proc_error_and_obs_error".png, id=86, 523.9575pt x 341.02406pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_s
+ample_paths_proc_error_and_obs_error".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sa
+mple_paths_proc_error_and_obs_error".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q4_sample_paths_proc_error_and_obs_error".png  used on input lin
+e 188.
+(pdftex.def)             Requested size: 281.85587pt x 183.45296pt.
+<"/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sample
+_paths_proc_error_and_fixed_obs_error".png, id=87, 523.9575pt x 341.02406pt>
+File: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_s
+ample_paths_proc_error_and_fixed_obs_error".png Graphic file (type png)
+<use "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/""q4_sa
+mple_paths_proc_error_and_fixed_obs_error".png>
+Package pdftex.def Info: "/media/edrive/Bayesian_Methods/BHM_Assignments/HW03/R
+eport/Images/""q4_sample_paths_proc_error_and_fixed_obs_error".png  used on inp
+ut line 197.
+(pdftex.def)             Requested size: 281.85587pt x 183.45296pt.
+ [6 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q4_sampl
+e_paths_proc_error_only.png> </media/edrive/Bayesian_Methods/BHM_Assignments/HW
+03/Report/Images/q4_sample_paths_proc_error_and_obs_error.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+ [7 </media/edrive/Bayesian_Methods/BHM_Assignments/HW03/Report/Images/q4_sampl
+e_paths_proc_error_and_fixed_obs_error.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+ (mccurleyHW03.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package rerunfilecheck Info: File `mccurleyHW03.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
+ ) 
+Here is how much of TeX's memory you used:
+ 10160 strings out of 494857
+ 159328 string characters out of 3177992
+ 263154 words of memory out of 3000000
+ 13613 multiletter control sequences out of 15000+200000
+ 13957 words of font info for 52 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 44i,11n,49p,718b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></home/cmccurley/.miktex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb>
+Output written on mccurleyHW03.pdf (7 pages, 209745 bytes).
+PDF statistics:
+ 137 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+
